@@ -55,34 +55,34 @@ select screen_name, co2_budget, co2_consumed, co2_budget - co2_consumed as co2_l
 ###ASSIGNMENT 2 (EXERCISE3)
 
 Q1
-
+![Week3Assign2Q1.png](Week3Assign2Q1.png)
 
 Q2
-
+![Week3Assign2Q2.png](Week3Assign2Q2.png)
 
 Q3
-
+![Week3Assign2Q3.png](Week3Assign2Q3.png)
 
 Q4
-
+![Week3Assign2Q4.png](Week3Assign2Q4.png)
 
 Q5
-
+![Week3Assign2Q5.png](Week3Assign2Q5.png)
 
 Q6
-
+![Week3Assign2Q6.png](Week3Assign2Q6.png)
 
 Q7
-
+![Week3Assign2Q7.png](Week3Assign2Q7.png)
 
 Q8
-
+![Week3Assign2Q8.png](Week3Assign2Q8.png)
 
 Q9
-
+![Week3Assign2Q9.png](Week3Assign2Q9.png)
 
 Q10
-
+![Week3Assign2Q10.png](Week3Assign2Q10.png)
 
 
 
