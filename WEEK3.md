@@ -55,12 +55,14 @@ select screen_name, co2_budget, co2_consumed, co2_budget - co2_consumed as co2_l
 ###ASSIGNMENT 2 (EXERCISE3)
 
 Q1
+
 SELECT country.name AS "country name", airport.name AS "airport name" 
 FROM country JOIN airport ON country.iso_country = airport.iso_country 
 WHERE country.name = 'Iceland';
 ![Week3Assign2Q1.png](Week3Assign2Q1.png)
 
 Q2
+
 SELECT airport.name AS "airport name" FROM airport INNER JOIN 
 country ON airport.iso_country = country.iso_country 
 WHERE country.name = 'France' AND airport.type="Large_airport";
@@ -68,6 +70,7 @@ WHERE country.name = 'France' AND airport.type="Large_airport";
 
 
 Q3
+
 SELECT country.name AS "country_name", airport.name AS "airport_name" 
 FROM country JOIN airport ON country.iso_country = airport.iso_country 
 WHERE country.continent = 'AN';
@@ -75,12 +78,14 @@ WHERE country.continent = 'AN';
 
 
 Q4
+
 select airport.name from game, airport 
 where airport.ident=game.location and game.screen_name="Ilkka";
 ![Week3Assign2Q4.png](Week3Assign2Q4.png)
 
 
 Q5
+
 select airport.elevation_ft * 0.3048 AS elevation_m from game, 
 airport where airport.ident=game.location and 
 game.screen_name="heini";
@@ -88,12 +93,14 @@ game.screen_name="heini";
 
 
 Q6
+
 select airport.name from game, airport 
 where airport.ident=game.location and game.screen_name="Ilkka";
 ![Week3Assign2Q6.png](Week3Assign2Q6.png)
 
 
 Q7
+
 SELECT country.name FROM game 
 JOIN airport ON airport.ident = game.location 
 INNER JOIN country ON country.iso_country = airport.iso_country 
@@ -102,6 +109,7 @@ WHERE game.screen_name = "Ilkka";
 
 
 Q8
+
 SELECT goal.name FROM goal 
 INNER JOIN goal_reached ON goal.id = goal_reached.goal_id
 INNER JOIN game ON goal_reached.game_id = game.id
@@ -110,6 +118,7 @@ WHERE game.screen_name = "heini";
 
 
 Q9
+
 SELECT airport.name FROM airport  
 INNER JOIN game ON airport.ident = game.location 
 INNER JOIN goal_reached ON game.id = goal_reached.game_id
@@ -120,13 +129,13 @@ AND game.screen_name = 'Ilkka';
 
 
 Q10
+
 SELECT country.name FROM airport  
 INNER JOIN game ON airport.ident = game.location  
 INNER JOIN goal_reached ON game.id = goal_reached.game_id  
 INNER JOIN goal ON goal_reached.goal_id = goal.id  
 INNER JOIN country ON airport.iso_country = country.iso_country  
 WHERE goal.name = 'clouds' AND game.screen_name = 'Ilkka';
-
 ![Week3Assign2Q10.png](Week3Assign2Q10.png)
 
 
